@@ -1,6 +1,6 @@
 package sg.edu.nus.iss;
 
-public class Bicycle {
+public class Bicycle implements Startable {
   private int gear;
   private int speed;
 
@@ -24,7 +24,7 @@ public class Bicycle {
   public void setSpeed(int speed) {
     this.speed = speed;
   }
-
+  
   public void applyBrake(int decreaseValue){
     speed = speed - decreaseValue;
 
